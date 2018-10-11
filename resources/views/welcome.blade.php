@@ -1,95 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+<head>
+    <title>Fabrice Garrec</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/api/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: red;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+    <link rel="stylesheet" type="text/css" href="js/api/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/api/slick-theme.css"/>
+</head>
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
+<body class="index">
+    
+    <div class="navbar">
+        <div class="l-container">
+            <a href="index.html">
+                <img src="img/logos/logo_grey.png" alt="" class="logo">
+            </a>
+            <nav class="navbar-navigation subnav">
+                <ul class="navbar-navigation-list">
+                    <li class="navigation-list-items"> <a href="projects.html"> Projets</a></li>
+                    <li class="navigation-list-items"> <a href="a-propos.html"> À propos de moi</a></li>
+                </ul>
+            </nav>   
+            <div class="burger-menu">
+                <span class="burger-menu-bar"></span>
+                <span class="burger-menu-bar"></span>
+                <span class="burger-menu-bar"></span>
+            </div>
+        </div>
+    </div>
+    <div class="hide"></div>
+    <header class="header parallax-header" >
+        <div class="header-content">
+            <img src="img/logos/logo_escaip.png" alt="">
+            <div class="slash-bar"></div>
+            <h1 class="header-content-title">Mon projet de vie</h1>
+            <div class="header-buttons">
+                <a href="" class="goto-escaip">Aller sur escaip.ca</a>
+                <a href="" class="see-escaip">Voir le projet</a>
+            </div>
+        </div>
+        
+    </header>
+    <main class="main">
+        
+            
+        <section class="presentation l-container">
+            <img src="img/guillemets.png" class="guillement-left" alt="">
+                <p class="presentation-text">
+                    Je suis un artiste qui est devenu programmeur. Jadore faire des projets
+                    esthétiquement beaux et ergonomiques. Mon but? Monter mon propre réseau social.
+                </p>
+            <img src="img/guillemets.png" class="guillement-right" alt="">
+        </section>
+        <section class="techno parallax-carousel">
+            <div class="carousel-container l-container">
+                <h3 class="techno-title">Mes technologies préférées</h3>
+                <div class="techno-carousel">
+                    <img src="{{asset('img/techno/Adobe_Illustrator_Icon_(CS6).svg.png')}}" alt="">
+                    <img src="img/techno/afterEffects.png" alt="">
+                    <img src="img/techno/animate.png" alt="">
+                    <img src="img/techno/bootstrap.png" alt="">
+                    <img src="img/techno/css3.png" alt="">
+                    <img src="img/techno/HTML_Logo.png" alt="">
+                    <img src="img/techno/java.png" alt="">
+                    <img src="img/techno/Javascript-shield.png" alt="">
+                    <img src="img/techno/jquery.gif" alt="">
+                    <img src="img/techno/laravel-512.png" alt="">
+                    <img src="img/techno/less-7-226016.png" alt="">
+                    <img src="img/techno/Photoshop_CC_icon.png" alt="">
+                    <img src="img/techno/php.png" alt="">
+                    <img src="img/techno/premiere.png" alt="">
+                    <img src="img/techno/qml.png" alt="">
+                    <img src="img/techno/qt_creator.png" alt="">
+                    <img src="img/techno/sass.png" alt="">
+                    <img src="img/techno/unity.png" alt="">
+                    <img src="img/techno/vscode.png" alt="">
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            </div>
+        </section>
+        <div id="project-popup" class="project-items-popup mfp-hide">
+            <img src="img/zelda.jpg" style="width:100%;" alt="">
+            <div class="cancel">
+                <span class="cancel-bar"></span>
+                <span class="cancel-bar"></span>
+            </div>
+            <div class="popup-container">
+                <div class="project-popup-infos">
+                    <h3 class="project-popup-title">My little Zelda</h3>
+                    <p class="project-popup-category"> - Programmation</p>
                 </div>
+                <div class="project-popup-content">
+                    <div class="popup-more-infos">
+                        <p class="project-popup-techo"><strong>Technologies impliquées :</strong> Adobe PhotoShop, Unity, C#</p>
+                        <p class="project-popup-time"><strong>Durée du projet :</strong> 8h</p>
+                    </div>
+                    <p class="popup-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusamus suscipit 
+                        ducimus illum possimus vitae. Facilis maxime, minima animi, quam aliquid nesciunt 
+                        ipsum est perferendis cupiditate, amet in nisi distinctio.
+                    </p>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="project.html" class="btn-view-project">Voir plus</a>
                 </div>
             </div>
         </div>
-    </body>
+        
+        
+
+        <section class="project grid row l-container">
+            <h3 class="project-title col-12">Quelques projets</h3>
+            <a href="#project-popup" class="open-popup-link col-12 col-sm-6 col-md-4 col-lg-3 ">
+                <div class="project-items">
+                    <img src="img/zelda.jpg" class="project-items-img" style="width:100%;" alt="">
+                    <p class="project-items-title">My little Zelda</p>
+                    <p class="project-items-category">Programmation</p>
+                </div>  
+            </a>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 project-items">
+                <img src="img/zelda.jpg" class="project-items-img" style="width:100%;" alt="">
+                <p class="project-items-title">My little Zelda</p>
+                <p class="project-items-category">Programmation</p>
+            </div> 
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 project-items">
+                <img src="img/cupcake.jpg" class="project-items-img" alt="">
+                <p class="project-items-title">My little Zelda</p>
+                <p class="project-items-category">Programmation</p>
+            </div> 
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 project-items">
+                <img src="img/cupcake.jpg" class="project-items-img" style="width:100%;" alt="">
+                <p class="project-items-title">My little Zelda</p>
+                <p class="project-items-category">Programmation</p>
+            </div>  
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 project-items">
+                <img src="img/cupcake.jpg" class="project-items-img" style="width:100%;" alt="">
+                <p class="project-items-title">My little Zelda</p>
+                <p class="project-items-category">Programmation</p>
+            </div>  
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 project-items">
+                <img src="img/cupcake.jpg" class="project-items-img" style="width:100%;" alt="">
+                <p class="project-items-title">My little Zelda</p>
+                <p class="project-items-category">Programmation</p>
+            </div> 
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 project-items">
+                <img src="img/cupcake.jpg" class="project-items-img" style="width:100%;" alt="">
+                <p class="project-items-title">My little Zelda</p>
+                <p class="project-items-category">Programmation</p>
+            </div>
+            
+            
+        </section> 
+    </main>
+    <footer class="footer">
+        <div class="footer-container l-container">
+            <img src="img/logos/logo_grey.png" alt="Fabrice Garrec" class="footer-logo">
+        </div>
+    </footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+
+    <script type="text/javascript" src="js/api/slick.min.js"></script>
+    <script type="text/javascript" src="js/api/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/api/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/api/parallax.min.js"></script>
+
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/waypoint.js"></script>
+    <!-- <script type="text/javascript" src="js/popup.js"></script> -->
+    <script type="text/javascript" src="js/hover.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.open-popup-link').magnificPopup({
+                type:'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+        });
+
+    </script>
+</body>
+
+
 </html>

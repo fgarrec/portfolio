@@ -1,87 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
+    <title>Fabrice Garrec</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('js/api/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.cs')}}s">
+    <link rel="stylesheet" href="{{asset('css/reset.css')}}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
-
-    <!-- Scripts -->
-    <script>
-        window.Laravel = <?php echo json_encode([
-            'csrfToken' => csrf_token(),
-        ]); ?>
-    </script>
+    <link rel="stylesheet" type="text/css" href="{{asset('js/api/slick.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('js/api/slick-theme.css')}}"/>
 </head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
 
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-                            <li><a href="{{ url('/login') }}">Login</a></li>
-                            <li><a href="{{ url('/register') }}">Register</a></li>
-                        @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="{{ url('/logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endif
-                    </ul>
-                </div>
+<body class="{{Route::current()->getName() === 'projects.show' ? 'one-project' : 'index'}}">
+        
+    <div class="navbar">
+        <div class="l-container">
+            <a href="{{asset('index.html')}}">
+                <img src="{{asset('img/logos/logo_grey.png')}}" alt="" class="logo">
+            </a>
+            <nav class="navbar-navigation subnav">
+                <ul class="navbar-navigation-list">
+                    <li class="navigation-list-items"> <a href="projects.html"> Projets</a></li>
+                    <li class="navigation-list-items"> <a href="a-propos.html"> À propos de moi</a></li>
+                </ul>
+            </nav>   
+            <div class="burger-menu">
+                <span class="burger-menu-bar"></span>
+                <span class="burger-menu-bar"></span>
+                <span class="burger-menu-bar"></span>
             </div>
-        </nav>
-
-        @yield('content')
+        </div>
     </div>
+    <div class="hide"></div>
+    
+        @yield('content')
+        
+    <footer class="footer">
+        <div class="footer-container l-container">
+            <img src="{{asset('img/logos/logo_grey.png')}}" alt="Fabrice Garrec" class="footer-logo">
+        </div>
+    </footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
-    <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <script type="text/javascript" src="{{asset('js/api/slick.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/api/jquery.waypoints.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/api/jquery.magnific-popup.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/api/parallax.min.js')}}"></script>
+
+    <script type="text/javascript" src="{{asset('js/carousel.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/parallax.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/waypoint.js')}}"></script>
+    <!-- <script type="text/javascript" src="js/popup.js"></script> -->
+    <script type="text/javascript" src="{{asset('js/hover.js')}}"></script>
+    <script type="text/javascript">
+
+        $('.parallax-header-project').parallax({imageSrc: '{{asset("img/vignettes/$project->img1")}}'});
+        
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.open-popup-link').magnificPopup({
+                type:'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+        });
+
+    </script>
 </body>
+
+
 </html>

@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Project;
 use Illuminate\Http\Request;
 
-class ProjetController extends Controller
+class ProjectController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -45,7 +46,8 @@ class ProjetController extends Controller
      */
     public function show($id)
     {
-        //
+        $project = Project::find($id);
+        return view('projects.show', compact('project'));
     }
 
     /**

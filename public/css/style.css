@@ -320,13 +320,15 @@ textarea:read-only {
 .project .project-items {
   padding: 15px;
   cursor: pointer;
+  max-height: 177px;
+  overflow: hidden;
 }
 .project .project-items .project-items-img {
   width: 100%;
 }
 .project .project-items .project-items-title {
   display: inline-block;
-  font-size: 23px;
+  font-size: 18px;
   color: #494949;
   z-index: 1;
 }
@@ -337,6 +339,7 @@ textarea:read-only {
     color: transparent;
     margin-left: 25px;
     border-bottom: 1px solid transparent;
+    padding: 0 0 8px 0;
   }
 }
 @media (min-width: 576px) {
@@ -346,6 +349,7 @@ textarea:read-only {
     color: transparent;
     margin-left: 25px;
     padding-top: 3px;
+    font-size: 14px;
   }
 }
 .project-items-popup {
@@ -742,7 +746,7 @@ textarea:read-only {
 }
 .is-translating.project-items-category {
   color: white !important;
-  transform: translate(0px, -50px);
+  transform: translate(0px, -58px);
   transition-duration: .25s;
   transition-property: all;
   transition-timing-function: ease-out;

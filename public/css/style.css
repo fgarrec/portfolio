@@ -337,6 +337,8 @@ textarea:read-only {
     color: transparent;
     margin-left: 25px;
     border-bottom: 1px solid transparent;
+    font-size: 18px;
+    padding-right: 0;
   }
 }
 @media (min-width: 576px) {
@@ -346,6 +348,7 @@ textarea:read-only {
     color: transparent;
     margin-left: 25px;
     padding-top: 3px;
+    font-size: 14px;
   }
 }
 .project-items-popup {
@@ -744,7 +747,7 @@ textarea:read-only {
 }
 .is-translating.project-items-category {
   color: white !important;
-  transform: translate(0px, -50px);
+  transform: translate(0px, -55px);
   transition-duration: .25s;
   transition-property: all;
   transition-timing-function: ease-out;

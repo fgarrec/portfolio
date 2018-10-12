@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function index(){
-        $projects = Project::all();
-        return view('welcome', compact('projects'));
+        // $projects = Project::all();
+        return view('welcome');
     }
 }

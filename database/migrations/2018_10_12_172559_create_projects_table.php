@@ -18,6 +18,11 @@ class CreateProjectsTable extends Migration
             $table->string('name');
             $table->string('type');
             $table->string('time');
+            $table->string('technos');
+            $table->string('vignettes');
+            $table->string('img1');
+            $table->string('img2')->nullable();
+            $table->string('img3')->nullable();
             $table->string('description');
             $table->timestamps();
         });

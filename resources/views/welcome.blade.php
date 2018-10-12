@@ -66,7 +66,7 @@
             <h3 class="project-title col-12">Quelques projets</h3>
             @foreach ($projects as $project)    
                 <div id="project-popup" class="project-items-popup mfp-hide">
-                    <img src="img/zelda.jpg" style="width:100%;" alt="">
+                    <img src="img/vignettes/{{$project->vignettes}}" style="width:100%;" alt="">
                     <div class="cancel">
                         <span class="cancel-bar"></span>
                         <span class="cancel-bar"></span>
@@ -91,7 +91,7 @@
                 </div>
                 <a href="#project-popup" class="open-popup-link col-12 col-sm-6 col-md-4 col-lg-3 ">
                     <div class="project-items">
-                        <img src="img/zelda.jpg" class="project-items-img" style="width:100%;" alt="">
+                        <img src="img/vignettes/{{$project->vignettes}}" class="project-items-img" style="width:100%;" alt="">
                         <p class="project-items-title">{{$project->name}}</p>
                         <p class="project-items-category">{{$project->type}}</p>
                     </div>  

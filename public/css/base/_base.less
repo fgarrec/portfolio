@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: @white;
+    color: @fontColor;
+
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    // font-weight: 300;
+}
+main{
+    margin-bottom: 50px !important;
+}
+section{
+    margin-bottom: 65px;
+}
+a{
+    text-decoration: none;
+    color: @fontColor;    
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+h3{
+    font-size: 23px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+
+textarea:read-only{
+    width: 100%;
+    min-height: 240px;
+    background-color: #dbdbdb;
+    border: none;
+    font-size: .9rem;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.hide{
+    display: none;
+}

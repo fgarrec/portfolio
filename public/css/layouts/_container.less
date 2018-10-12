@@ -1,0 +1,23 @@
+@import '../variables/_variables';
+.l-container{
+    // margin: 0 auto; 
+    // max-width: 1000px;
+    width: 100%;
+
+    @media(min-width: 768px){
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    @media(min-width: @desktop){
+        min-width: 1000px;
+        margin: 0 auto;
+    }
+}
+.grid{
+
+    margin-top: 50px;
+
+    @media(min-width: @mobileCorrection){
+        margin-top: 60px;
+    }
+}

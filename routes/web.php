@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/', "IndexController@index");
-// Route::get('/admin', "AdminController@login");
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-// Route::resource('/projects', 'ProjectController');
+Route::get('/', function () {
+    return view('welcome');
+});

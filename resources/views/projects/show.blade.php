@@ -2,7 +2,7 @@
 
 @section('content')
     <header class="project-header">
-        <div class="parallax-header-project" style="filter:blur(40px);">
+        <div class="bg-image-container parallax-header-project" style="filter:blur(40px);">
 
         </div>
     </header>
@@ -29,9 +29,10 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="{{asset('js/api/parallax.min.js')}}"></script>
+
     <script type="text/javascript">
         $(document).ready(function() {
-            $('.parallax-header-project').parallax({imageSrc: '{{asset("img/vignettes/$project->vignettes")}}'});
+            $('.parallax-header-project').parallax({imageSrc: '{{asset("img/$project->img1")}}'});
             
         });
 

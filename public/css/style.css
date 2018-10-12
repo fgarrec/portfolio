@@ -259,8 +259,6 @@ textarea:read-only {
 .project-header .bg-image-container {
   width: 100%;
   height: 100%;
-  background-image: url("../../img/cupcake.jpg");
-  background-size: cover;
   filter: blur(10px);
 }
 .footer {

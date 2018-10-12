@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('js/api/slick-theme.css')}}"/>
 </head>
 
-<body class="index">
+<body class="{{Route::currentRouteName() === 'project.show' ? 'one-project' : 'index'}}">
     
     <div class="navbar">
         <div class="l-container">

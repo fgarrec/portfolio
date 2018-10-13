@@ -96,7 +96,7 @@
         
                             <a href="{{route('project.show', $project->id)}}" class="btn-view-project">Voir plus</a>
                         </div>
-                        {{$pipi}}
+                        
                     </div>
                 </div>
             @endforeach

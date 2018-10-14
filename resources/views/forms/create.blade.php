@@ -1,6 +1,6 @@
 
 {{ Form::open(['route' => 'project.store', 'class' => 'form', 'files' => true]) }}
-
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="form-elements">
         {!! Form::label('name', 'Titre du projet') !!}
         {!! Form::text('name', null) !!}

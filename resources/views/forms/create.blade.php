@@ -21,11 +21,11 @@
     </div>
     <div class="form-elements">
         {!! Form::label('vignette', 'Vignette') !!}
-        {!! Form::file('vignette') !!}
+        {!! Form::text('vignette', null) !!}
     </div>
     <div class="form-elements">
         {!! Form::label('img1', 'Image1') !!}
-        {!! Form::file('img1') !!}
+        {!! Form::text('img1', null) !!}
     </div>  
      {{--  <div class="form-elements">
         {!! Form::label('img1', 'Image1') !!}

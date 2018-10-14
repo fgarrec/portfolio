@@ -39,26 +39,28 @@ class ProjectController extends Controller
     {
         $project = new Project();
 
-        if($request->hasFile('vignette') && $request->hasFile('img1')){
-            $vignette = $request->file('vignette');
-            $vignName = 'vignette' . '_' . time() . '.' . $vignette->getClientOriginalExtension();
-            $locationV = url('/img/vignettes/' . $vignName);
-            Image::make($vignette)->fit(695,460)->save($locationV);
+        // if($request->hasFile('vignette') && $request->hasFile('img1')){
+        //     $vignette = $request->file('vignette');
+        //     $vignName = 'vignette' . '_' . time() . '.' . $vignette->getClientOriginalExtension();
+        //     $locationV = url('/img/vignettes/' . $vignName);
+        //     Image::make($vignette)->fit(695,460)->save($locationV);
             
-            $img1 = $request->file('img1');
-            $img1Name = 'img1' . '_' . time() . '.' . $img1->getClientOriginalExtension();
-            $locationI = url('img/' . $img1Name);
-            Image::make($img1)->fit(695,460)->save($locationI);
+        //     $img1 = $request->file('img1');
+        //     $img1Name = 'img1' . '_' . time() . '.' . $img1->getClientOriginalExtension();
+        //     $locationI = url('img/' . $img1Name);
+        //     Image::make($img1)->fit(695,460)->save($locationI);
 
-            $project->vignettes = $vignName;
-            $project->img1 = $img1Name;
-        }
+        //     $project->vignettes = $vignName;
+        //     $project->img1 = $img1Name;
+        // }
             // $project->vignettes = 'bedonnez-suivant.png';
         
             // $project->img1 = 'bedonnez-suivant.png';
         $project->name = $request->name;
         $project->type = $request->type;
         $project->time = $request->time;
+        $project->time = $request->vignette;
+        $project->time = $request->img1;
         $project->description =  'description'; //$request->description;
         $project->technos = $request->technos;
         

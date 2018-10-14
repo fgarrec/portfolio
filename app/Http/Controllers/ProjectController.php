@@ -38,18 +38,16 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         $project = new Project();
-        // var_dump(publlic_path());
-        // var_dump(url('/'));
-        // die;
+
         if($request->hasFile('vignette') && $request->hasFile('img1')){
             $vignette = $request->file('vignette');
             $vignName = 'vignette' . '_' . time() . '.' . $vignette->getClientOriginalExtension();
-            $locationV = 'http://fabricegarrec.com/img/vignettes/' . $vignName;
+            $locationV = url('/img/vignettes/' . $vignName);
             Image::make($vignette)->fit(695,460)->save($locationV);
             
             $img1 = $request->file('img1');
             $img1Name = 'img1' . '_' . time() . '.' . $img1->getClientOriginalExtension();
-            $locationI = 'http://fabricegarrec.com/img/' . $img1Name;
+            $locationI = url('img/' . $img1Name);
             Image::make($img1)->fit(695,460)->save($locationI);
 
             $project->vignettes = $vignName;

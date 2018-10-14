@@ -38,9 +38,9 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         $project = new Project();
-        var_dump(publlic_path());
-        var_dump(url('/'));
-        die;
+        // var_dump(publlic_path());
+        // var_dump(url('/'));
+        // die;
         if($request->hasFile('vignette') && $request->hasFile('img1')){
             $vignette = $request->file('vignette');
             $vignName = 'vignette' . '_' . time() . '.' . $vignette->getClientOriginalExtension();

@@ -59,8 +59,8 @@ class ProjectController extends Controller
         $project->name = $request->name;
         $project->type = $request->type;
         $project->time = $request->time;
-        $project->time = $request->vignette;
-        $project->time = $request->img1;
+        $project->vignettes = $request->vignette;
+        $project->img1 = $request->img1;
         $project->description =  'description'; //$request->description;
         $project->technos = $request->technos;
         

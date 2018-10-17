@@ -23,6 +23,6 @@ Route::get('/phpinfo/public', function() {
     
 });
 Route::get('/phpinfo/url', function() {
-    return url();
+    return url('/');
     
 });

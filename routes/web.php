@@ -17,3 +17,7 @@ Route::get('/destroy/{id}', 'ProjectController@destroy')->where('id', '[0-9]+');
 Route::get('/download', 'HomeController@getDownload');
 
 Route::resource('/project', 'ProjectController');
+
+Route::get('/phpinfo', function() {
+    return phpinfo();
+});

@@ -19,14 +19,14 @@
         {!! Form::label('technos', 'Technos') !!}
         {!! Form::text('technos', null) !!}
     </div>
-    <div class="form-elements">
+    {{--  <div class="form-elements">
         {!! Form::label('vignette', 'Vignette') !!}
         {!! Form::text('vignette', null) !!}
     </div>
     <div class="form-elements">
         {!! Form::label('img1', 'Image1') !!}
         {!! Form::text('img1', null) !!}
-    </div>  
+    </div>    --}}
      <div class="form-elements">
         {!! Form::label('vignette', 'Vignette') !!}
         {!! Form::file('vignette') !!}

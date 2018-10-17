@@ -42,7 +42,7 @@ class ProjectController extends Controller
         if($request->hasFile('vignette') && $request->hasFile('img1')){
             $vignette = $request->file('vignette');
             $vignName = 'vignette' . '_' . time() . '.' . $vignette->getClientOriginalExtension();
-            $locationV = public_path().'/img/' . $vignName;
+            $locationV = public_path().'/img/vignettes/' . $vignName;
             Image::make($vignette)->fit(695,460)->save($locationV);
             
             $img1 = $request->file('img1');

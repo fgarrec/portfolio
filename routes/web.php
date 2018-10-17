@@ -19,5 +19,6 @@ Route::get('/download', 'HomeController@getDownload');
 Route::resource('/project', 'ProjectController');
 
 Route::get('/phpinfo', function() {
-    return phpinfo();
+    return public_path();
+    
 });

@@ -40,7 +40,6 @@ class ProjectController extends Controller
         $project = new Project();
 
         if($request->hasFile('vignette') && $request->hasFile('img1')){
-            return "true";
             $vignette = $request->file('vignette');
             $vignName = 'vignette' . '_' . time() . '.' . $vignette->getClientOriginalExtension();
             $locationV = url('/').'/img/vignettes/' . $vignName;
@@ -51,20 +50,20 @@ class ProjectController extends Controller
             $locationI = url('/').'/img/' . $img1Name;
             Image::make($img1)->fit(695,460)->save($locationI);
 
-            $project->vignettes = $vignName;
-            $project->img1 = $img1Name;
-            $project->name = $request->name;
-            $project->type = $request->type;
-            $project->time = $request->time;
-            // $project->vignettes = $request->vignette;
-            // $project->img1 = $request->img1;
-            $project->description =  'description'; //$request->description;
-            $project->technos = $request->technos;
-            
-            $project->save();
-            // return redirect()->route('project.index');
         }
-        return "false";
+        
+        $project->vignettes = $vignName;
+        $project->img1 = $img1Name;
+        $project->name = $request->name;
+        $project->type = $request->type;
+        $project->time = $request->time;
+        // $project->vignettes = $request->vignette;
+        // $project->img1 = $request->img1;
+        $project->description =  'description'; //$request->description;
+        $project->technos = $request->technos;
+        
+        $project->save();
+        return redirect()->route('project.index');
 
     }
 

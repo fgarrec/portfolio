@@ -42,6 +42,7 @@
     <footer class="footer">
         <div class="footer-container l-container">
             <img src="img/logos/logo_grey.png" alt="Fabrice Garrec" class="footer-logo">
+            <a href="/download/cv.pdf" download="cv.pdf">Télécharger mon c.v.</a>
         </div>
     </footer>
     

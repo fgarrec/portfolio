@@ -39,26 +39,29 @@ class ProjectController extends Controller
     {
         $project = new Project();
 
-        if($request->hasFile('vignette') && $request->hasFile('img1')){
-            $vignette = $request->file('vignette');
-            $vignName = 'vignette' . '_' . time() . '.' . $vignette->getClientOriginalExtension();
-            $locationV = public_path('img/vignettes/' . $vignName);
-            Image::make($vignette)->fit(695,460)->save($locationV);
+        // if($request->hasFile('vignette') && $request->hasFile('img1')){
+        //     $vignette = $request->file('vignette');
+        //     $vignName = 'vignette' . '_' . time() . '.' . $vignette->getClientOriginalExtension();
+        //     $locationV = public_path('img/vignettes/' . $vignName);
+        //     Image::make($vignette)->fit(695,460)->save($locationV);
             
-            $img1 = $request->file('img1');
-            $img1Name = 'img1' . '_' . time() . '.' . $img1->getClientOriginalExtension();
-            $locationI = public_path('img/' . $img1Name);
-            Image::make($img1)->fit(695,460)->save($locationI);
+        //     $img1 = $request->file('img1');
+        //     $img1Name = 'img1' . '_' . time() . '.' . $img1->getClientOriginalExtension();
+        //     $locationI = public_path('img/' . $img1Name);
+        //     Image::make($img1)->fit(695,460)->save($locationI);
 
-            $project->vignettes = $vignName;
-            $project->img1 = $img1Name;
-        }
+        //     $project->vignettes = $vignName;
+        //     $project->img1 = $img1Name;
+        // }
         $project->name = $request->name;
         $project->type = $request->type;
         $project->time = $request->time;
-        // $project->vignettes = $request->vignette;
-        // $project->img1 = $request->img1;
-        $project->description =  'description'; //$request->description;
+        $project->vignettes = $request->vignette;
+        $project->img1 = $request->img1;
+        $project->img2 = $request->img2;
+        $project->img2 = $request->img2;
+        $project->img3 = $request->img3;
+        $project->description =  $request->description; //$request->description;
         $project->technos = $request->technos;
         
         $project->save();

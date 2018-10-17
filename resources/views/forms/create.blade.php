@@ -19,22 +19,34 @@
         {!! Form::label('technos', 'Technos') !!}
         {!! Form::text('technos', null) !!}
     </div>
-    {{--  <div class="form-elements">
+    <div class="form-elements">
         {!! Form::label('vignette', 'Vignette') !!}
         {!! Form::text('vignette', null) !!}
     </div>
     <div class="form-elements">
         {!! Form::label('img1', 'Image1') !!}
         {!! Form::text('img1', null) !!}
-    </div>    --}}
-     <div class="form-elements">
+    </div>  
+    <div class="form-elements">
+        {!! Form::label('img2', 'Image2') !!}
+        {!! Form::text('img2', null) !!}
+    </div>  
+    <div class="form-elements">
+        {!! Form::label('img3', 'Image3') !!}
+        {!! Form::text('img3', null) !!}
+    </div>  
+    <div class="form-elements">
+        {!! Form::label('description', 'Description') !!}
+        {!! Form::textarea('description', null) !!}
+    </div>  
+     {{--  <div class="form-elements">
         {!! Form::label('vignette', 'Vignette') !!}
         {!! Form::file('vignette') !!}
     </div>
      <div class="form-elements">
         {!! Form::label('img1', 'Image1') !!}
         {!! Form::file('img1') !!}
-    </div>
+    </div>  --}}
     <button>Soumettre</button>
 
 {{ Form::close() }}

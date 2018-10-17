@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', 'ProjectController@index');
+Route::get('/', 'ProjectController@index')->name('index');
+Route::get('/destroy/{id}', 'ProjectController@destroy')->where('id', '[0-9]+');
 
 Route::resource('/project', 'ProjectController');

@@ -23,7 +23,7 @@ class CreateProjectsTable extends Migration
             $table->string('img1');
             $table->string('img2')->nullable();
             $table->string('img3')->nullable();
-            $table->string('description');
+            $table->longText('description');
             $table->timestamps();
         });
     }

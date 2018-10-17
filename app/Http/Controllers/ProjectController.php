@@ -50,9 +50,10 @@ class ProjectController extends Controller
             $locationI = url('/').'/img/' . $img1Name;
             Image::make($img1)->fit(695,460)->save($locationI);
 
-            $project->vignettes = $vignName;
-            $project->img1 = $img1Name;
+            
         }
+        $project->vignettes = $vignName;
+        $project->img1 = $img1Name;
         $project->name = $request->name;
         $project->type = $request->type;
         $project->time = $request->time;

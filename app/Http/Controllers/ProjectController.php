@@ -40,7 +40,7 @@ class ProjectController extends Controller
         $project = new Project();
 
         if($request->hasFile('vignette') && $request->hasFile('img1')){
-            return true;
+            return "true";
             $vignette = $request->file('vignette');
             $vignName = 'vignette' . '_' . time() . '.' . $vignette->getClientOriginalExtension();
             $locationV = url('/').'/img/vignettes/' . $vignName;
@@ -64,7 +64,7 @@ class ProjectController extends Controller
             $project->save();
             // return redirect()->route('project.index');
         }
-        return false;
+        return "false";
 
     }
 

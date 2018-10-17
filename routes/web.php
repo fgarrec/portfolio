@@ -18,7 +18,11 @@ Route::get('/download', 'HomeController@getDownload');
 
 Route::resource('/project', 'ProjectController');
 
-Route::get('/phpinfo', function() {
+Route::get('/phpinfo/public', function() {
     return public_path();
+    
+});
+Route::get('/phpinfo/url', function() {
+    return url();
     
 });

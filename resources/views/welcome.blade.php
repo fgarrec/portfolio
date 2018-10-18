@@ -72,16 +72,16 @@
                     </div>
                     <div class="popup-container">
                         <div class="project-popup-infos">
-                            <h3 class="project-popup-title">{{$project->id, $project->name}}</h3>
+                            <h3 class="project-popup-title">{{$project->id . ', ' . $project->name}}</h3>
                             <p class="project-popup-category"> - {{$project->type}}</p>
                         </div>
                         <div class="project-popup-content">
                             <div class="popup-more-infos">
-                                <p class="project-popup-techo"><strong>Technologies impliquées :</strong> {{$project->technolgies}}</p>
+                                <p class="project-popup-techo"><strong>Technologies impliquées :</strong> {{$project->technos}}</p>
                                 <p class="project-popup-time"><strong>Durée du projet :</strong> {{$project->time}}h</p>
                             </div>
                             <p class="popup-text">
-                                {{$project->description}}
+                                {{str_limit($project->description, 170)}}
                             </p>
         
                             <a href="{{route('project.show', $project->id)}}" class="btn-view-project">Voir plus</a>

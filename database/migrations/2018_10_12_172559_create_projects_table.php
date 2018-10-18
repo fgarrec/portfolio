@@ -22,7 +22,12 @@ class CreateProjectsTable extends Migration
             $table->string('vignettes');
             $table->string('img1');
             $table->string('img2')->nullable();
-            $table->string('img3')->nullable();
+            $table->string('img4')->nullable();
+            $table->string('img5')->nullable();
+            $table->string('img6')->nullable();
+            $table->string('img7')->nullable();
+            $table->string('img8')->nullable();
+            $table->string('img9')->nullable();
             $table->longText('description');
             $table->timestamps();
         });

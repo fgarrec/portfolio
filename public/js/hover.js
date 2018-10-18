@@ -1,10 +1,10 @@
-//for mouse over a project
+
 $(document).ready(function(){
     var $window = $(window);
     
     function checkWidth() {
         var windowsize = $window.width();
-        // console.log(windowsize);
+        
         if (windowsize > 575) {
             
             $(".project-items-img").mouseenter( function(){

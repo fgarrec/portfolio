@@ -27,7 +27,7 @@
             <div class="carousel-container l-container">
                 <h3 class="techno-title">Mes technologies préférées</h3>
                 <div class="techno-carousel">
-                    <img src="img/techno/Adobe_Illustrator_Icon_(CS6).svg.png" alt="">
+                    <img src="img/techno/Adobe_Illustrator_Icon_(CS6).png" alt="">
                     <img src="img/techno/afterEffects.png" alt="">
                     <img src="img/techno/animate.png" alt="">
                     <img src="img/techno/bootstrap.png" alt="">
@@ -35,7 +35,7 @@
                     <img src="img/techno/HTML_Logo.png" alt="">
                     <img src="img/techno/java.png" alt="">
                     <img src="img/techno/Javascript-shield.png" alt="">
-                    <img src="img/techno/jquery.gif" alt="">
+                    <img src="img/techno/jquery.png" alt="">
                     <img src="img/techno/laravel-512.png" alt="">
                     <img src="img/techno/less-7-226016.png" alt="">
                     <img src="img/techno/Photoshop_CC_icon.png" alt="">

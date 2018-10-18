@@ -27,7 +27,7 @@
             <nav class="navbar-navigation subnav">
                 <ul class="navbar-navigation-list">
                     <li class="navigation-list-items"> <a href="projects.html"> Projets</a></li>
-                    <li class="navigation-list-items"> <a href="a-propos.html"> À propos de moi</a></li>
+                    <li class="navigation-list-items"> <a href="{{route('aPropos')}}"> À propos de moi</a></li>
                 </ul>
             </nav>   
             <div class="burger-menu">
@@ -50,19 +50,20 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+     {{--  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>   --}}
 
     <script type="text/javascript" src="{{asset('js/api/slick.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/api/jquery.waypoints.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/api/jquery.magnific-popup.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/api/parallax.min.js')}}"></script>
-
-    <script type="text/javascript" src="{{asset('js/carousel.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/js.min.js')}}"></script>
+    
+    {{--<script type="text/javascript" src="{{asset('js/carousel.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/parallax.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/waypoint.js')}}"></script>
-    <!-- <script type="text/javascript" src="{{asset('js/popup.js')}}"></script> -->
-    <script type="text/javascript" src="{{asset('js/hover.js')}}"></script>
+      <script type="text/javascript" src="{{asset('js/waypoint.js')}}"></script>
+     <script type="text/javascript" src="{{asset('js/popup.js')}}"></script>   
+    <script type="text/javascript" src="{{asset('js/hover.js')}}"></script>--}}
 
     <script type="text/javascript">
         $(document).ready(function() {

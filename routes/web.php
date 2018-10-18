@@ -11,18 +11,22 @@
 |
 */
 
-Route::get('/', 'ProjectController@index')->name('index');
+Route::get('/', 'HomeController@home')->name('home');
 Route::get('/destroy/{id}', 'ProjectController@destroy')->where('id', '[0-9]+');
 
 Route::get('/download', 'HomeController@getDownload');
+Route::get('/a-propos', 'AproposController@aPropos')->name('aPropos');
 
 Route::resource('/project', 'ProjectController');
 
-Route::get('/phpinfo/public', function() {
-    return public_path();
+
+
+
+// Route::get('/phpinfo/public', function() {
+//     return public_path();
     
-});
-Route::get('/phpinfo/url', function() {
-    return url('/');
+// });
+// Route::get('/phpinfo/url', function() {
+//     return url('/');
     
-});
+// });

@@ -45,9 +45,9 @@
     <footer class="footer">
         <div class="footer-container l-container">
             <img src="{{asset('img/logos/logo_grey.png')}}" alt="Fabrice Garrec" class="footer-logo">
-            {{--  <div class="cv-container">
+            <div class="cv-container">
                 <img src="{{asset('img/icons/resume.png')}}" alt=""><a href="/download/cv.pdf" download="cv.pdf">Télécharger mon c.v.</a>
-            </div>  --}}
+            </div>
         </div>
     </footer>
     

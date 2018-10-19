@@ -3,6 +3,9 @@
 
 <head>
     <title>Fabrice Garrec</title>
+
+    <link rel="shortcut icon" href="{{asset('img/icons/icon_fabrice.ico')}}">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +24,7 @@
     
     <div class="navbar">
         <div class="l-container">
-            <a href="index.html">
+            <a href="{{route('home')}}">
                 <img src="{{asset('img/logos/logo_grey.png')}}" alt="" class="logo">
             </a>
             <nav class="navbar-navigation subnav">
@@ -42,7 +45,9 @@
     <footer class="footer">
         <div class="footer-container l-container">
             <img src="{{asset('img/logos/logo_grey.png')}}" alt="Fabrice Garrec" class="footer-logo">
-            <a href="/download/cv.pdf" download="cv.pdf">Télécharger mon c.v.</a>
+            <div class="cv-container">
+                <img src="{{asset('img/icons/resume.png')}}" alt=""><a href="/download/cv.pdf" download="cv.pdf">Télécharger mon c.v.</a>
+            </div>
         </div>
     </footer>
     

@@ -13,6 +13,8 @@
         .form-elements{
             width: 100%;
             margin-bottom: 30px;
+
+            
     
             label{
                 display: block;
@@ -25,6 +27,16 @@
                 border-top: none;
                 border-right: none;
                 border-left: none;
+
+                
+                &:focus{
+                    outline-color: @purple;
+                    // border-bottom: 1px solid @purple;
+                    border-bottom: none;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                }
             }
             textarea{
                 height: 200px;

@@ -5,9 +5,9 @@
         <div class="header-content">
             <img src="img/logos/logo_escaip.png" alt="">
             <div class="slash-bar"></div>
-            <h1 class="header-content-title">Mon projet de vie</h1>
+            <h1 class="header-content-title">Mon terrain de jeu</h1>
             <div class="header-buttons">
-                <a href="" class="goto-escaip">Aller sur escaip.ca</a>
+                {{--  <a href="" class="goto-escaip">Aller sur escaip.ca</a>  --}}
                 <a href="" class="see-escaip">Voir le projet</a>
             </div>
         </div>
@@ -18,7 +18,7 @@
         <section class="presentation l-container">
             <img src="img/guillemets.png" class="guillement-left" alt="">
                 <p class="presentation-text">
-                    Je suis un artiste qui est devenu programmeur. Jadore faire des projets
+                    Je suis un artiste qui est devenu programmeur. J'adore faire des projets
                     esthétiquement beaux et ergonomiques. Mon but? Monter mon propre réseau social.
                 </p>
             <img src="img/guillemets.png" class="guillement-right" alt="">

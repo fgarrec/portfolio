@@ -275,7 +275,23 @@ textarea:read-only {
   padding: 0 10px;
 }
 .footer .footer-container .footer-logo {
-  width: 100px;
+  width: 130px;
+}
+.footer .footer-container .cv-container {
+  float: right;
+}
+.footer .footer-container .cv-container img {
+  width: 20px;
+}
+.footer .footer-container .cv-container a {
+  font-size: 14px;
+  vertical-align: top;
+  margin: 4px 0 0 4px;
+  display: inline-block;
+}
+.footer .footer-container .cv-container a:hover {
+  color: #7c5ead;
+  text-decoration: underline;
 }
 .presentation {
   padding: 30px 10px 40px 10px;
@@ -704,6 +720,14 @@ textarea:read-only {
   display: block;
   width: 100%;
   border-bottom: 1px solid #8e8e8e;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.fabrice-form .form .form-elements input:focus,
+.fabrice-form .form .form-elements textarea:focus {
+  outline-color: #7c5ead;
+  border-bottom: none;
   border-top: none;
   border-right: none;
   border-left: none;

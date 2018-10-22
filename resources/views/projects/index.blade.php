@@ -24,7 +24,7 @@
             </div>
             <div class="popup-container">
                 <div class="project-popup-infos">
-                    <h3 class="project-popup-title">{{$project->id . ', ' . $project->name}}</h3>
+                    <h3 class="project-popup-title">{{$project->name}}</h3>
                     <p class="project-popup-category"> - {{$project->type}}</p>
                 </div>
                 <div class="project-popup-content">

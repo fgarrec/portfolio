@@ -36,6 +36,30 @@
         {!! Form::text('img3', null) !!}
     </div>  
     <div class="form-elements">
+        {!! Form::label('img4', 'Image4') !!}
+        {!! Form::text('img4', null) !!}
+    </div>  
+    <div class="form-elements">
+        {!! Form::label('img5', 'Image5') !!}
+        {!! Form::text('img5', null) !!}
+    </div>  
+    <div class="form-elements">
+        {!! Form::label('img6', 'Image6') !!}
+        {!! Form::text('img6', null) !!}
+    </div>  
+    <div class="form-elements">
+        {!! Form::label('img7', 'Image7') !!}
+        {!! Form::text('img7', null) !!}
+    </div>  
+    <div class="form-elements">
+        {!! Form::label('img8', 'Image8') !!}
+        {!! Form::text('img8', null) !!}
+    </div>  
+    <div class="form-elements">
+        {!! Form::label('img9', 'Image9') !!}
+        {!! Form::text('img9', null) !!}
+    </div>  
+    <div class="form-elements">
         {!! Form::label('description', 'Description') !!}
         {!! Form::textarea('description', null) !!}
     </div>  

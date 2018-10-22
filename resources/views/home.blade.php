@@ -18,7 +18,7 @@
         <section class="presentation l-container">
             <img src="img/guillemets.png" class="guillement-left" alt="">
                 <p class="presentation-text">
-                    Je suis un artiste qui est devenu programmeur. Jadore faire des projets
+                    Je suis un artiste qui est devenu programmeur. J'adore faire des projets
                     esthétiquement beaux et ergonomiques. Mon but? Monter mon propre réseau social.
                 </p>
             <img src="img/guillemets.png" class="guillement-right" alt="">

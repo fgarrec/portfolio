@@ -4,7 +4,7 @@
 <head>
     <title>Fabrice Garrec</title>
 
-    <link rel="shortcut icon" href="{{asset('img/icons/icon_fabrice.ico')}}">
+    <link rel="shortcut icon" href="{{asset('img/icons/fabrice_icon.ico')}}">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -29,7 +29,7 @@
             </a>
             <nav class="navbar-navigation subnav">
                 <ul class="navbar-navigation-list">
-                    <li class="navigation-list-items"> <a href="projects.html"> Projets</a></li>
+                    <li class="navigation-list-items"> <a href="{{route('project.index')}}"> Projets</a></li>
                     <li class="navigation-list-items"> <a href="{{route('aPropos')}}"> À propos de moi</a></li>
                 </ul>
             </nav>   

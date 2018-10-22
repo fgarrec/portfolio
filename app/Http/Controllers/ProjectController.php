@@ -59,13 +59,18 @@ class ProjectController extends Controller
         $project->vignettes = $request->vignette;
         $project->img1 = $request->img1;
         $project->img2 = $request->img2;
-        $project->img2 = $request->img2;
         $project->img3 = $request->img3;
+        $project->img4 = $request->img4;
+        $project->img5 = $request->img5;
+        $project->img6 = $request->img6;
+        $project->img7 = $request->img7;
+        $project->img8 = $request->img8;
+        $project->img9 = $request->img9;
         $project->description =  $request->description; //$request->description;
         $project->technos = $request->technos;
         
         $project->save();
-        return redirect()->route('project.index');
+        return redirect()->route('home');
 
     }
 

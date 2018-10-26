@@ -93,11 +93,13 @@ textarea:read-only {
   background-color: white;
   color: #494949;
   position: fixed;
-  top: 0;
+  top: -60px;
   right: 0;
   left: 0;
   z-index: 10;
   box-shadow: 0px 0px 10px #dbdbdb;
+  transition-duration: .5s;
+  transition-property: all;
 }
 .navbar .navbar-navigation {
   margin-top: 9px;
@@ -306,6 +308,9 @@ textarea:read-only {
   width: 27px;
   opacity: .5;
 }
+.presentation img:first-child {
+  float: left;
+}
 .presentation .guillement-right {
   transform: rotate(180deg);
   float: right;
@@ -333,6 +338,7 @@ textarea:read-only {
 }
 .project .project-items {
   padding: 15px;
+  text-align: left;
   cursor: pointer;
 }
 .project .project-items .project-items-img {

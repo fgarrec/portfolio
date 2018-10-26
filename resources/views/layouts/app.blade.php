@@ -15,9 +15,13 @@
     <link rel="stylesheet" href="{{asset('js/api/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/reset.css')}}">
+    <link rel="stylesheet" href="{{asset('css/header/component.css')}}">
+    <link rel="stylesheet" href="{{asset('css/header/demo.css')}}">
+    <link rel="stylesheet" href="{{asset('css/header/normalize.css')}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset('js/api/slick.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('js/api/slick-theme.css')}}"/>
+    s
 </head>
 
 <body class="{{Route::currentRouteName() === 'project.show' ? 'one-project' : 'index'}}">
@@ -64,6 +68,11 @@
     <script type="text/javascript" src="{{asset('js/api/parallax.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/js.min.js')}}"></script>
     
+    <script src="{{asset('js/header/TweenLite.min.js')}}"></script>
+    <script src="{{asset('js/header/EasePack.min.js')}}"></script>
+    <script src="{{asset('js/header/rAF.js')}}"></script>
+    <script src="{{asset('js/header/points.js')}}"></script>
+    
     {{--<script type="text/javascript" src="{{asset('js/carousel.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/parallax.js')}}"></script>
       <script type="text/javascript" src="{{asset('js/waypoint.js')}}"></script>
@@ -72,9 +81,16 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $('.open-popup-link').magnificPopup({
-                type:'inline',
-                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            var lastScrollTop = 0;
+            // var navbar = document.getElementById("navbar");
+            $(window).scroll(function(event){
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop){
+                $(".navbar").css("top", "0");
+            }else{
+                $(".navbar").css("top", "-60");
+            }
+            lastScrollTop = st;
             });
         });
 

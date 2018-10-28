@@ -14,6 +14,8 @@
 }
 
 .main-title {
+	margin-top: -60px;
+	opacity: 0;
 	position: absolute;
 	margin: 0;
 	padding: 0;
@@ -21,9 +23,14 @@
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
+	/* transform: translate3d(-50%,-50%,0); */
+	transition: 1s;
 }
 
+.thin{
+	font-size: 26px;
+	display: block;
+}
 .demo-1 .main-title, 
 .demo-3 .main-title {
 	text-transform: uppercase;

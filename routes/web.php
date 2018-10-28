@@ -30,3 +30,7 @@ Route::resource('/project', 'ProjectController');
 //     return url('/');
     
 // });
+
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index');

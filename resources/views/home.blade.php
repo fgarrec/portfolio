@@ -5,12 +5,12 @@
     <div class="content">
         <div id="large-header" class="large-header">
             <canvas id="demo"></canvas>
-            <h1 class="main-title">Fabrice Garrec <span class="thin">Portfolio</span></h1>
+            <h1 class="main-title">Fabrice Garrec <span class="thin">Développeur web</span></h1>
         </div>
     </div>
 </div>
     <main class="main">
-        
+
         <section class="presentation l-container">
             <img src="img/guillemets.png" class="guillement-left" alt="">
                 <p class="presentation-text">
@@ -19,26 +19,53 @@
                 </p>
             <img src="img/guillemets.png" class="guillement-right" alt="">
         </section>
-        <section class="techno parallax-carousel">
-            <div class="carousel-container l-container">
-                <h3 class="techno-title">Mes technologies préférées</h3>
-                <div class="techno-carousel">
-                    <img src="img/techno/Adobe_Illustrator_Icon_(CS6).png" alt="">
-                    <img src="img/techno/css3.png" alt="">
-                    <img src="img/techno/HTML_Logo.png" alt="">
-                    <img src="img/techno/Javascript-shield.png" alt="">
-                    <img src="img/techno/jquery.png" alt="">
-                    <img src="img/techno/laravel-512.png" alt="">
-                    <img src="img/techno/less-7-226016.png" alt="">
-                    <img src="img/techno/php.png" alt="">
-                    <img src="img/techno/sass.png" alt="">
-                    <img src="img/techno/vscode.png" alt="">
-                </div>
-            </div>
+        <section class="techno l-container">
+                <h3 class="techno-title">Mes compétences</h3>
+                <div class="skillbar clearfix " data-percent="20%">
+                    <div class="skillbar-title" ><span>HTML5</span></div>
+                    <div class="skillbar-bar" ></div>
+                    <div class="skill-bar-percent">20%</div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="25%">
+                    <div class="skillbar-title" ><span>CSS3</span></div>
+                    <div class="skillbar-bar" ></div>
+                    <div class="skill-bar-percent">25%</div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="50%">
+                    <div class="skillbar-title" ><span>jQuery</span></div>
+                    <div class="skillbar-bar" ></div>
+                    <div class="skill-bar-percent">50%</div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="40%">
+                    <div class="skillbar-title" ><span>PHP</span></div>
+                    <div class="skillbar-bar" ></div>
+                    <div class="skill-bar-percent">40%</div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="75%">
+                    <div class="skillbar-title" ><span>Wordpress</span></div>
+                    <div class="skillbar-bar" ></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="100%">
+                    <div class="skillbar-title" ><span>SEO</span></div>
+                    <div class="skillbar-bar" ></div>
+                    <div class="skill-bar-percent">100%</div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="70%">
+                    <div class="skillbar-title" ><span>Photoshop</span></div>
+                    <div class="skillbar-bar" ></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div> <!-- End Skill Bar -->
         </section>
-        
-        
-        
+
+
+
         <section class="project grid row l-container">
             <h3 class="project-title col-12">Quelques projets</h3>
             @foreach ($projects as $project)
@@ -47,9 +74,9 @@
                         <img src="img/vignettes/{{$project->vignettes}}" class="project-items-img" style="width:100%;" alt="">
                         <p class="project-items-title">{{$project->name}}</p>
                         <p class="project-items-category">{{$project->type}}</p>
-                    </div>  
+                    </div>
                 </a>
             @endforeach
-        </section> 
+        </section>
     </main>
 @endsection

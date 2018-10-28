@@ -750,7 +750,7 @@ p {
 }
 .skillbar-title span {
   display: block;
-  padding: 0 20px;
+  text-align: left;
   height: 35px;
   color: #7c5ead;
   line-height: 35px;

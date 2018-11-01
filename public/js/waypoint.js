@@ -7,7 +7,7 @@ $('.main-title').fadeTo(1000, 1);
 $('.presentation').waypoint(function(){
     $('.presentation').fadeTo("slow", 1);
     console.log("waypoint1");
-}, {offset:'50%'});
+}, {offset:'60%'});
 $('.techno').waypoint(function(){
     $('.techno').fadeTo(1000, 1);
     setTimeout(function(){

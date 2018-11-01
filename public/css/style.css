@@ -13,6 +13,7 @@ main {
 }
 section {
   margin-bottom: 65px;
+  text-align: left;
 }
 a {
   text-decoration: none;
@@ -615,7 +616,7 @@ textarea:read-only {
 @media (min-width: 685px) {
   .fabrice-header .fabrice-header-container .header-content {
     padding: 0 10px;
-    width: 74%;
+    width: 73%;
     display: inline-block;
   }
 }
@@ -642,6 +643,7 @@ textarea:read-only {
 @media (min-width: 685px) {
   .fabrice-technos {
     padding: 70px 10px 20px 10px;
+    text-align: left;
   }
 }
 .fabrice-technos .fabrice-technos-title {
@@ -665,6 +667,7 @@ textarea:read-only {
 }
 .skills .skills-container {
   padding: 40px 10px;
+  text-align: left;
 }
 @media (max-width: 575px) {
   .skills .skills-container {
@@ -782,6 +785,7 @@ p {
 }
 .fabrice-form {
   padding: 40px 10px;
+  text-align: left;
 }
 .fabrice-form .form-title {
   font-size: 23px;

@@ -12,10 +12,14 @@
 */
 
 Route::get('/', 'HomeController@home')->name('home');
+Route::get('/home', 'HomeController@home')->name('home');
 Route::get('/destroy/{id}', 'ProjectController@destroy')->where('id', '[0-9]+');
 
 Route::get('/download', 'HomeController@getDownload');
 Route::get('/a-propos', 'AproposController@aPropos')->name('aPropos');
+Route::get('/admin', 'AdminController@index')->name('admin');
+
+
 
 Route::resource('/project', 'ProjectController');
 

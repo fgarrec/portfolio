@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Project;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Auth\Guard;
 use Intervention\Image\Facades\Image;
 
 class ProjectController extends Controller
@@ -24,9 +25,10 @@ class ProjectController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Guard $auth)
     {
-        return view('projects.create');
+        $user = $auth->user();
+        return view('projects.create', compact('user'));
     }
 
     /**
@@ -115,8 +117,9 @@ class ProjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Guard $auth, $id)
     {
+        $user = $auth->user();
         $project = Project::destroy($id);
         return redirect()->route('index');
     }

@@ -14,54 +14,48 @@
         <section class="presentation l-container">
             <img src="img/guillemets.png" class="guillement-left" alt="">
                 <p class="presentation-text">
-                    Je suis un artiste qui est devenu programmeur. Jadore faire des projets
+                    Je suis un artiste qui est devenu programmeur. J'adore faire des projets
                     esthétiquement beaux et ergonomiques. Mon but? Apprendre le plus de technologies possible.
                 </p>
             <img src="img/guillemets.png" class="guillement-right" alt="">
         </section>
         <section class="techno l-container">
                 <h3 class="techno-title">Mes compétences</h3>
-                <div class="skillbar clearfix " data-percent="20%">
-                    <div class="skillbar-title" ><span>HTML5</span></div>
-                    <div class="skillbar-bar" ></div>
-                    <div class="skill-bar-percent">20%</div>
-                </div> <!-- End Skill Bar -->
-                
-                <div class="skillbar clearfix " data-percent="25%">
-                    <div class="skillbar-title" ><span>CSS3</span></div>
-                    <div class="skillbar-bar" ></div>
-                    <div class="skill-bar-percent">25%</div>
-                </div> <!-- End Skill Bar -->
-                
-                <div class="skillbar clearfix " data-percent="50%">
-                    <div class="skillbar-title" ><span>jQuery</span></div>
-                    <div class="skillbar-bar" ></div>
-                    <div class="skill-bar-percent">50%</div>
-                </div> <!-- End Skill Bar -->
-                
-                <div class="skillbar clearfix " data-percent="40%">
+                <div class="skillbar clearfix " data-percent="72%">
                     <div class="skillbar-title" ><span>PHP</span></div>
                     <div class="skillbar-bar" ></div>
-                    <div class="skill-bar-percent">40%</div>
+                    <div class="skill-bar-percent">72%</div>
+                </div> <!-- End Skill Bar -->
+                <div class="skillbar clearfix " data-percent="97%">
+                    <div class="skillbar-title" ><span>HTML5</span></div>
+                    <div class="skillbar-bar" ></div>
+                    <div class="skill-bar-percent">97%</div>
                 </div> <!-- End Skill Bar -->
                 
+                <div class="skillbar clearfix " data-percent="96%">
+                    <div class="skillbar-title" ><span>CSS3</span></div>
+                    <div class="skillbar-bar" ></div>
+                    <div class="skill-bar-percent">96%</div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="83%">
+                    <div class="skillbar-title" ><span>jQuery</span></div>
+                    <div class="skillbar-bar" ></div>
+                    <div class="skill-bar-percent">83%</div>
+                </div> <!-- End Skill Bar -->
+
                 <div class="skillbar clearfix " data-percent="75%">
-                    <div class="skillbar-title" ><span>Wordpress</span></div>
+                    <div class="skillbar-title" ><span>JavaScript</span></div>
                     <div class="skillbar-bar" ></div>
                     <div class="skill-bar-percent">75%</div>
                 </div> <!-- End Skill Bar -->
                 
-                <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" ><span>SEO</span></div>
-                    <div class="skillbar-bar" ></div>
-                    <div class="skill-bar-percent">100%</div>
-                </div> <!-- End Skill Bar -->
-                
                 <div class="skillbar clearfix " data-percent="70%">
-                    <div class="skillbar-title" ><span>Photoshop</span></div>
+                    <div class="skillbar-title" ><span>SEO</span></div>
                     <div class="skillbar-bar" ></div>
                     <div class="skill-bar-percent">70%</div>
                 </div> <!-- End Skill Bar -->
+                
         </section>
 
 

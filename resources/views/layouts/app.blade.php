@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{asset('js/api/slick.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('js/api/slick-theme.css')}}"/>
-    s
+    
 </head>
 
 <body class="{{Route::currentRouteName() === 'project.show' ? 'one-project' : 'index'}}">
@@ -35,6 +35,13 @@
                 <ul class="navbar-navigation-list">
                     <li class="navigation-list-items"> <a href="{{route('project.index')}}"> Projets</a></li>
                     <li class="navigation-list-items"> <a href="{{route('aPropos')}}"> À propos de moi</a></li>
+                    @if(Auth::user())
+                        <li class="navigation-list-items">
+                            <a href="{{Auth::logout()}}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                            Se déconnecter</li>
+                            </a>
+                        </li>
+                    @endif
                 </ul>
             </nav>
             <div class="burger-menu">
@@ -44,6 +51,7 @@
             </div>
         </div>
     </div>
+    {{-- <h1>{{Auth::user()->name}}</h1> --}}
     <div class="hide"></div>
     @yield('content')
     <footer class="footer">
@@ -75,6 +83,7 @@
    <script type="text/javascript" src="{{asset('js/hover.js')}}"></script>
 
    <script type="text/javascript">
+    @if(Route::currentRouteName() === 'home')
        $(document).ready(function() {
            var lastScrollTop = 0;
            // var navbar = document.getElementById("navbar");
@@ -88,6 +97,11 @@
            lastScrollTop = st;
            });
        });
+    @else
+        $(document).ready(function() {
+            $(".navbar").css("top", "0");
+        });
+    @endif
 
    </script>
 </body>

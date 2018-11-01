@@ -36,7 +36,7 @@
                     <li class="back-end-list-items"><img src="img/techno/css3.png" alt=""></li>
                     <li class="back-end-list-items"><img src="img/techno/bootstrap.png" alt=""></li>
                     <li class="back-end-list-items"><img src="img/techno/Javascript-shield.png" alt=""></li>
-                    <li class="back-end-list-items"><img src="img/techno/jquery.gif" alt=""></li>
+                    <li class="back-end-list-items"><img src="img/techno/jquery.png" alt=""></li>
                     <li class="back-end-list-items"><img src="img/techno/less-7-226016.png" alt=""></li>
                     <li class="back-end-list-items"><img src="img/techno/sass.png" alt=""></li>
                 </ul>
@@ -45,7 +45,7 @@
                 <h3 class="back-end-title">Logiciels</h3>
                 <ul class="back-end-list carousel-log">
                     <li class="back-end-list-items"><img src="img/techno/vscode.png" alt=""></li>
-                    <li class="back-end-list-items"><img src="img/techno/Adobe_Illustrator_Icon_(CS6).svg.png" alt=""></li>
+                    <li class="back-end-list-items"><img src="img/techno/Adobe_Illustrator_Icon_(CS6).png" alt=""></li>
                     <li class="back-end-list-items"><img src="img/techno/Photoshop_CC_icon.png" alt=""></li>
                     <li class="back-end-list-items"><img src="img/techno/unity.png" alt=""></li>
                     <li class="back-end-list-items"><img src="img/techno/qt_creator.png" alt=""></li>
